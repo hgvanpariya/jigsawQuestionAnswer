@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" ng-app>
+<head>
+<meta charset="utf-8">
+<title>My HTML File</title>
+<!--     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+<!--     <script src="bower_components/angular/angular.js"></script>
+
+ -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+<script src="hello.js"></script>
+</head>
+<body>
+	<form>
+		<div ng-controller="HelloH">
+
+			<p>
+				Question : <input type="text" width="200" ng-model="question.id">
+			</p>
+			<p>The content is {{question.question}}</p>
+			<form name="myForm">
+
+				<label ng-model="question.question"> </label> <select
+					ng-model="selectedCar">
+					<option ng-repeat="x in chartsType" value="{{x.model}}">{{x.model}}</option>
+				</select>
+
+				<h1>You selected: {{selectedCar}}</h1>
+	
+
+			</form>
+
+		</div>
+	</form>
+
+</body>
+</html>
